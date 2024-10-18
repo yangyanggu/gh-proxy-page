@@ -171,7 +171,7 @@ async function proxy(urlObj, reqInit) {
 }
 
 export default {
-	async fetch(request, env, ctx) {
-    fetchHandler(request).then()
+  async fetch(request, env, ctx) {
+    return fetchHandler(request)
   }
 }
